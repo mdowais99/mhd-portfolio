@@ -14,21 +14,24 @@ let data = [
         check: 'resto',
         name: 'Resturant App',
         link: 'https://mdowais99.github.io/Restaurant-Web/',
-        imgSrc: './content/images/restro-pic.png'
+        imgSrc: './content/images/restro-pic.png',
+        aboutWeb: 'One page Resturent App design by usign Html, CSS and Bootstrap'
     },
     quiz = {
         keys: 2,
         check: 'quiz',
         name: 'Quiz App',
         link: 'https://mdowais99.github.io/',
-        imgSrc: './content/images/quiz-pic.png'
+        imgSrc: './content/images/quiz-pic.png',
+        aboutWeb: 'A simple Quiz App develop by using Html, CSS, Javascript and a bit of Bootstrap'
     },
     todo = {
         keys: 3,
         check: 'todo',
         name: 'ToDo App',
         link: 'https://mdowais99.github.io/ToDo-App/',
-        imgSrc: './content/images/todo-pic.png'
+        imgSrc: './content/images/todo-pic.png',
+        aboutWeb: 'A simple Todo App was created to practice Javascript'
     }
 ];
 
@@ -47,8 +50,8 @@ const tecShow = () => {
 }
 const eduShow = () => {
     skils.innerHTML = `
-    <li>Bachelors of Computer Science</li>
-    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2020 - 2023 &nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    continue...</p>
+    <li>BS Computer Science</li>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2020 - 2023 &nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; continue...</p>
     <li>Intermediate </li>
     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2016 - 2018</p>
     <li>Matriculation</li>
@@ -62,13 +65,12 @@ const eduShow = () => {
 (
     function () {
 
-        data.map(({ name, link, imgSrc, keys, check }) => {
-           
+        data.map(({ name, link, imgSrc, keys, check, aboutWeb }) => {
+
             prj.innerHTML += `<div id="prCardId" class="car text-white col-12 col-md-6 mb-lg-5 mb-md-4 mb-sm-3 mb-4 text-center softLeftAni" onclick="how(${check})" style="background-image: url(${imgSrc});">
             <div class="inCar">
-                    <h1 class="text-center pb-2 pt-3 bCol">${name}</h1>
-                    <p class='py-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum veritatis repellat molestiae,
-                        optio at repellendus sed et.</p>
+                    <h1 class="text-center pb-2 pt-4 bCol">${name}</h1>
+                    <p class='py-4 pb-4'>${aboutWeb}</p>
                         <button class="downBtn rounded-pill" id="visitBtn" )'>Demo</button>
                 </div>
         </div>`
@@ -209,7 +211,7 @@ myFun(win)
 win.addEventListener('onload', myFun)
 
 
-const download = ()=>{
+const download = () => {
     let a = document.createElement('a')
     let url = "./content/MHD-Cv.pdf"
     a.href = url

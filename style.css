@@ -9,7 +9,8 @@
     /* font-family: 'Signika', sans-serif; */
     letter-spacing: 0.1em;
 }
-.titleTxt{
+
+.titleTxt {
     font-size: 1.3em;
 }
 
@@ -91,16 +92,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* padding: 2px; */
 }
-#profilePic{
+
+#profilePic {
     width: 75%;
     margin: 20px;
 }
-/* #profilePic:hover{
-    width: 100%;
-    transition: 0.5s ease;
-} */
 
 
 .nameTxt {
@@ -118,6 +115,10 @@
     justify-content: center;
     align-items: center;
     background-color: #2f30347a;
+    text-align: justify;
+}
+.about div div p{
+    font-size: 0.9em;
 }
 
 .btnn {
@@ -141,6 +142,9 @@
     color: #74FFFF;
 }
 
+.aboutResult>p {
+    font-size: 0.8em;
+}
 
 /* ======  PROJECT     =========== */
 
@@ -213,6 +217,12 @@
     background-color: rgba(0, 0, 0, 0.349);
     visibility: visible;
 }
+.car div p{
+    color: #edf8f8;
+}
+.car div h1{
+    font-size: 1.9em;
+}
 
 
 /* =====   CONTACT     ===== */
@@ -240,7 +250,8 @@
     width: 100px;
     text-align: center;
 }
-.icons div a{
+
+.icons div a {
     cursor: pointer;
 }
 
@@ -292,7 +303,8 @@
     background-color: #2f30347a;
     color: white;
 }
-.footer > div >h5{
+
+.footer>div>h5 {
     font-size: 1.1em;
 }
 
@@ -305,9 +317,10 @@
 
 /* =======     MEDIA QUERIES       =========== */
 @media (width<1000px) {
-    #profilePic{
+    #profilePic {
         width: 110%;
     }
+
     #homeText>h3 {
         font-size: 1em;
     }
@@ -344,7 +357,8 @@
     #homeText>h1 {
         font-size: 2.6em;
     }
-    #profilePic{
+
+    #profilePic {
         width: 85%;
     }
 
@@ -382,31 +396,25 @@
 }
 
 @media (width<576px) {
-    #navBack{
+    #navBack {
         background-color: rgba(0, 0, 0, 0.815);
         height: 75px;
     }
+
     .navColapseCol {
         background-color: rgba(0, 0, 0, 0.815);
     }
+
     #prjRender {
-        padding: 0% 7% ;
+        padding: 0% 7%;
     }
+
     #homeText>h3 {
-        font-size: 1.1em;
+        font-size: 1em;
     }
 
     #homeText>h1 {
-        font-size: 2.2em;
-    }
-/* 
-    #prCardId {
-        height: 300px;
-        width: 400px;
+        font-size: 2.1em;
     }
 
-    #prCardId:hover {
-        width: 405px;
-        height: 305px;
-    } */
 }
