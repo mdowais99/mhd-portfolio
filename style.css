@@ -55,7 +55,7 @@
 /* ==== NAV-BAR === */
 .custom-toggler.navbar-toggler {
     /* border-color: rgb(16, 255, 255); */
-    border-radius: 12px;
+    border-radius: 10px;
     border: 3px solid rgba(16, 255, 255, 0.8);
 }
 
@@ -118,7 +118,8 @@
     background-color: #2f30347a;
     text-align: justify;
 }
-.about div div p{
+
+.about div div p {
     font-size: 0.9em;
 }
 
@@ -218,10 +219,12 @@
     background-color: rgba(0, 0, 0, 0.349);
     visibility: visible;
 }
-.car div p{
+
+.car div p {
     color: #edf8f8;
 }
-.car div h1{
+
+.car div h1 {
     font-size: 1.9em;
 }
 
@@ -349,6 +352,10 @@
 
 
 @media (width<768px) {
+    .navColapseCol {
+        background-color: rgba(0, 0, 0, 0.815);
+    }
+
     #homeText>h3 {
         font-size: 1.4em;
     }
@@ -397,11 +404,19 @@
 @media (width<576px) {
     #navBack {
         background-color: rgba(0, 0, 0, 0.815);
-        height: 75px;
+        height: 61px;
     }
 
-    .navColapseCol {
-        background-color: rgba(0, 0, 0, 0.815);
+    .custom-toggler.navbar-toggler {
+        /* border-color: rgb(16, 255, 255); */
+        border-radius: 8px;
+        border: 2px solid rgba(16, 255, 255, 0.8);
+    }
+
+    .custom-toggler .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(16, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        height: 1.2em;
+        width: 1.2em;
     }
 
     #prjRender {
@@ -415,33 +430,36 @@
     #homeText>h1 {
         font-size: 2.1em;
     }
+
     #navTag {
         margin: 0px 35px;
         margin-right: 25px;
-        font-size: 1.7em;
+        font-size: 1.4em;
     }
+
     .icons div {
         width: 60px;
-        font-size: 0.9em;
+        font-size: 1em;
     }
+
     .footer>div>h5 {
         font-size: 0.9em;
     }
 }
-@media (width<350px) {
-    .icons{
+
+@media (width<353px) {
+    .icons {
         width: 250px;
     }
-    .icons div {
-        width: 50px;
-    }
+
     #navTag {
         margin: 0px 30px;
         margin-right: 10px;
-        font-size: 1.6em;
+        font-size: 1.3em;
     }
+
     #homeText>h3 {
-        font-size: 0.7em;
+        font-size: 0.9em;
     }
 
     #homeText>h1 {

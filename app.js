@@ -51,11 +51,11 @@ const tecShow = () => {
 const eduShow = () => {
     skils.innerHTML = `
     <li>BS Computer Science</li>
-    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2020 - 2023 &nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; continue...</p>
+    <p>&emsp; 2020 - 2023 &emsp; continue...</p>
     <li>Intermediate </li>
-    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2016 - 2018</p>
+    <p>&emsp; 2016 - 2018</p>
     <li>Matriculation</li>
-    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2016</p>`
+    <p>&emsp; 2016</p>`
     skilCheck.style.borderBottom = 'none';
     eduCheck.style.borderBottom = '#74FFFF 4px solid'
 }
