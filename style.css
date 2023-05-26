@@ -65,12 +65,13 @@
 
 #navTag {
     margin: 0px 40px;
+    font-size: 1.6em;
 }
 
 #navBack {
     background-color: rgba(0, 0, 0, 0.562);
     width: 100%;
-    height: 70px;
+    height: 72px;
 }
 
 
@@ -308,8 +309,6 @@
     font-size: 1.1em;
 }
 
-
-
 .bCol {
     color: #74FFFF;
 }
@@ -416,5 +415,36 @@
     #homeText>h1 {
         font-size: 2.1em;
     }
+    #navTag {
+        margin: 0px 35px;
+        margin-right: 25px;
+        font-size: 1.7em;
+    }
+    .icons div {
+        width: 60px;
+        font-size: 0.9em;
+    }
+    .footer>div>h5 {
+        font-size: 0.9em;
+    }
+}
+@media (width<350px) {
+    .icons{
+        width: 250px;
+    }
+    .icons div {
+        width: 50px;
+    }
+    #navTag {
+        margin: 0px 30px;
+        margin-right: 10px;
+        font-size: 1.6em;
+    }
+    #homeText>h3 {
+        font-size: 0.7em;
+    }
 
+    #homeText>h1 {
+        font-size: 1.8em;
+    }
 }
